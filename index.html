@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTagger</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="d-flex gap-3">
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/img/icons/burger.svg" alt="">
+                </button>
+
+                <a class="navbar-brand ps-3" href="#">
+                    <img src="/img/logo.png" alt="" width="100%">
+                </a>
+
+                <a class="navbar-brand d-flex align-items-center" href="#">BTagger</a>
+
+                <nav class="d-flex fs-6" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item d-flex align-items-center"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item d-flex align-items-center"><a href="#">User</a></li>
+                        <li class="breadcrumb-item d-flex align-items-center active" aria-current="page">Match Review
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <a href="#">
+                    <img src="/img/icons/mail.svg">
+                </a>
+                <a href="#">
+                    <img src="/img/icons/bell.svg">
+                </a>
+                <a href="#">
+                    <img src="/img/icons/user.svg">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container overflow-hidden mt-5">
+        <div class="row gx-3">
+            <div class="col-9">
+                <div class="border rounded bg-white pb-3 px-3">
+                    <iframe
+                        src="https://player.vimeo.com/video/692771744?h=affdb3cfad&amp;title=0&amp;byline=0&amp;portrait=0&amp;playsinline=0&amp;muted=1&amp;autopause=0&amp;app_id=122963"
+                        width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen="" title="Сивер, Яцко VS Гарбузова, Степанова" data-ready="true"
+                        style="width: 100%"></iframe>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-4 border-end-1 ps-0">
+                                <p class="fw-bold mb-1 fs-6">Сивер, Яцко VS Гарбузова, Степанова</p>
+                                <p class="m-0 text-muted">
+                                    <span class="small">12.03.2022</span>
+                                    <span class="small">21-13, 16-21, 11-21</span>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <p class="mb-1 small">Первенство Орловской области</p>
+                                <p class="m-0 small">U19</p>
+                            </div>
+                            <div class="col-4 pe-0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 ps-0 d-flex align-items-center">
+                                            <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                                                <a href="#">
+                                                    <img src="/img/icons/share.svg">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="/img/icons/attach.svg">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="/img/icons/print.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 pe-0 btn-controllers d-flex justify-content-around">
+                                            <a href="#"
+                                                class="btn btn-outline-secondary p-0 border-0 d-flex align-items-center justify-content-center">
+                                                <img src="/img/icons/backward.svg">
+                                            </a>
+                                            <a href="#"
+                                                class="btn btn-outline-secondary p-0 border-0 d-flex align-items-center justify-content-center">
+                                                <img src="/img/icons/back.svg">
+                                            </a>
+                                            <a href="#"
+                                                class="btn btn-outline-secondary p-0 border-0 d-flex align-items-center justify-content-center">
+                                                <img src="/img/icons/back.svg">
+                                            </a>
+                                            <a href="#"
+                                                class="btn btn-outline-secondary p-0 border-0 d-flex align-items-center justify-content-center">
+                                                <img src="/img/icons/backward.svg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-8 ps-0 pe-4 border-1 border-end">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <select class="form-select m-0" aria-label="Default select example">
+                                        <option selected>Гарбузова Полина</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto bg-white border p-1 rounded">
+                                    <nav class="nav nav-pills">
+                                        <a class="nav-link active btn-sm" aria-current="page" href="#">Подача</a>
+                                        <a class="nav-link btn-sm" href="#">Последний удар</a>
+                                    </nav>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button"
+                                        class="btn btn-grey btn-outline-secondary p-0 d-flex align-items-center justify-content-center">
+                                        <img src="/img/icons/refresh.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <table class="table table-bordered table-hover bg-white">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Ошибка своей команды</option>
+                                        <option value="1">Ошибка другой команды</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button"
+                                        class="btn btn-grey btn-outline-secondary p-0 d-flex align-items-center justify-content-center">
+                                        <img src="/img/icons/refresh.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <p>Тип ошибки</p>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            В поле 33.3%
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            В поле 33.3%
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            В поле 33.3%
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            В поле 33.3%
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p>Причина ошибки</p>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            Невынужденная
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            Вынужденная
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                            Неопределенная
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-white mb-3">
+                    <div class="card-header bg-success py-3">
+                        <span class="fw-bold">BИДЕО ФРАГМЕНТЫ</span>
+                        <span class="float-end fw-light">12 фрагментов</span>
+                    </div>
+                    <table class="table table-borderless m-0">
+                        <tbody>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td width="40%" class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                                </th>
+                                <td class="fw-bold">Низкая</td>
+                                <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

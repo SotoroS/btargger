@@ -1,0 +1,10 @@
+* {
+    font-family: Roboto, serif;
+    font-size: 14px;
+}
+
+.btn-controllers .btn, .btn-grey {
+    width: 42px;
+    height: 42px;
+    background-color: #eaeaea;
+}
