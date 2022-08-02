@@ -1,10 +1,15 @@
 :root {
     --bs-primary: #329b47;
     --bs-link-color: #329b47;
+    --bs-primary-rgb: 50, 155, 71;
 }
 
 .nav-pills {
     --bs-nav-pills-link-active-bg: #329b47;
+}
+
+.nav {
+    --bs-nav-link-color: black;
 }
 
 .btn-outline-primary {
@@ -67,4 +72,27 @@
     display: block;
     position: absolute;
     bottom: 0;
+}
+
+
+.moments {
+    height: 442px;
+}
+
+.form-check-input {
+    width: 2.3em !important;
+    height: 1.35em !important;
+}
+
+.form-check-label {
+    line-height: 25px;
+}
+
+/* Helpers */
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.fs-12 {
+    font-size: 12px;
 }
