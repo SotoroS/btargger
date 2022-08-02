@@ -74,14 +74,14 @@
                         style="width: 100%"></iframe>
                     <div class="container">
                         <div class="row mt-3">
-                            <div class="col-4 border-end-1 ps-0">
+                            <div class="col-auto ps-0 border-end">
                                 <p class="fw-bold mb-1 fs-6">Сивер, Яцко VS Гарбузова, Степанова</p>
                                 <p class="m-0 text-muted">
-                                    <span class="small">12.03.2022</span>
-                                    <span class="small">21-13, 16-21, 11-21</span>
+                                    <span class="small border-secondary border-end pe-2">12.03.2022</span>
+                                    <span class="small ps-1">21-13, 16-21, 11-21</span>
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col">
                                 <p class="mb-1 small">Первенство Орловской области</p>
                                 <p class="m-0 small">U19</p>
                             </div>
@@ -128,7 +128,7 @@
 
                 <div class="container mt-5">
                     <div class="row">
-                        <div class="col-8 ps-0 pe-4 border-1 border-end">
+                        <div class="col-8 ps-0 border-1 border-end">
                             <div class="row d-flex align-items-center">
                                 <div class="col">
                                     <select class="form-select m-0" aria-label="Default select example">
@@ -139,9 +139,17 @@
                                     </select>
                                 </div>
                                 <div class="col-auto bg-white border p-1 rounded">
-                                    <nav class="nav nav-pills">
-                                        <a class="nav-link active btn-sm" aria-current="page" href="#">Подача</a>
-                                        <a class="nav-link btn-sm" href="#">Последний удар</a>
+                                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">Подача</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Последний удар</button>
+                                        </li>
                                     </nav>
                                 </div>
                                 <div class="col-2">
@@ -152,35 +160,171 @@
                                 </div>
                             </div>
 
-                            <table class="table table-bordered table-hover bg-white">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <!-- Статистика в блоках -->
+
+                            <div class="row mt-2 row-cols-2 row-cols-lg-5 g-lg-3">
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0 position-relative block-active">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                                <div class="col px-1">
+                                    <div class="bg-white border p-0">
+                                        <div class="border-bottom py-3 px-2 fw-bold">
+                                            <span>Высокий</span>
+                                            <div class="d-inline float-end">
+                                                <span class="block-bar">
+                                                    <span class="bg-success" style="height: 80%;"></span>
+                                                </span>
+                                                <span class="block-bar">
+                                                    <span class="bg-danger" style="height: 100%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="px-2 py-1 fw-light">18.8%</div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="col-4">
@@ -205,25 +349,25 @@
 
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             В поле 33.3%
                                         </label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             В поле 33.3%
                                         </label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             В поле 33.3%
                                         </label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             В поле 33.3%
                                         </label>
                                     </div>
@@ -233,19 +377,19 @@
 
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             Невынужденная
                                         </label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             Вынужденная
                                         </label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label small" for="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">
                                             Неопределенная
                                         </label>
                                     </div>
@@ -263,37 +407,38 @@
                     </div>
                     <table class="table table-borderless m-0">
                         <tbody>
-                            <tr>
-                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
+                            <tr class="border-bottom">
+                                <th class="text-danger text-center border-end border-danger border-bottom-0 small">
+                                    01:01
                                 </th>
                                 <td width="40%" class="fw-bold">Низкая</td>
                                 <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom">
                                 <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
                                 </th>
                                 <td class="fw-bold">Низкая</td>
                                 <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom">
                                 <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
                                 </th>
                                 <td class="fw-bold">Низкая</td>
                                 <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom">
                                 <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
                                 </th>
                                 <td class="fw-bold">Низкая</td>
                                 <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom">
                                 <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
                                 </th>
                                 <td class="fw-bold">Низкая</td>
                                 <td class="text-muted fw-light text-end">2:1 (0:0) +0:1</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom">
                                 <th class="text-danger text-center border-end border-danger border-bottom-0 small">01:01
                                 </th>
                                 <td class="fw-bold">Низкая</td>

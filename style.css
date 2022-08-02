@@ -1,3 +1,30 @@
+:root {
+    --bs-primary: #329b47;
+    --bs-link-color: #329b47;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #329b47;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #329b47;
+    --bs-btn-border-color: #329b47;
+    --bs-btn-hover-bg: #329b47;
+    --bs-btn-hover-border-color: #329b47;
+    --bs-btn-active-bg: #329b47;
+    --bs-btn-active-border-color: #329b47;
+    --bs-btn-disabled-color: #329b47;
+    --bs-btn-disabled-border-color: #329b47;
+}
+
+.btn-primary {
+    --bs-btn-bg: #329b47;
+    --bs-btn-border-color: #329b47;
+    --bs-btn-disabled-bg: #329b47;
+    --bs-btn-disabled-border-color: #329b47;
+}
+
 * {
     font-family: Roboto, serif;
     font-size: 14px;
@@ -7,4 +34,37 @@
     width: 42px;
     height: 42px;
     background-color: #eaeaea;
+}
+
+.form-check-input:checked {
+    background-color: #329b47;
+    border-color: #329b47;
+}
+
+/* Активный блок статистики */
+.block-active {
+    border-color: #329b47 !important;
+}
+
+.block-active::before {
+    content: "";
+    position: absolute;
+    background: url(/img/icons/checked.svg) no-repeat 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Прогресс бар для блоков */
+.block-bar {
+    width: 3px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.block-bar span {
+    width: 3px;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
