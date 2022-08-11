@@ -127,7 +127,7 @@
                 </div>
             </div>
             <div class="col-3 ps-16">
-                <div class="card moments text-white mb-3 overflow-scroll">
+                <div class="card moments text-white overflow-scroll">
                     <div class="card-header bg-primary py-3">
                         <span class="fs-12 fw-bold">BИДЕО ФРАГМЕНТЫ</span>
                         <span class="float-end fw-light">12 фрагментов</span>
@@ -230,7 +230,26 @@
             <div class="col-9 pe-16">
                 <div class="row">
                     <div class="col-6">
-                        <p>Игрок</p>
+                        <p class="mb-1">Счет</p>
+
+                        <div class="d-flex">
+                            <div>
+                                <input class="form-control score-input text-center" id="leftScore" placeholder="10">
+                            </div>
+                            <span class="d-flex align-items-center px-2">:</span>
+                            <div>
+                                <input class="form-control score-input text-center" id="rightScore" placeholder="10">
+                            </div>
+                            <div class="ps-4">
+                                <button class="btn btn-secondary fw-light">Задать счет</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <p class="mb-1">Игрок</p>
 
                         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
@@ -256,7 +275,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <p>Подача</p>
+                        <p class="mb-1">Подача</p>
 
                         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                             <input type="radio" class="btn-check" name="[btnradio" id="pbtnradio1" autocomplete="off" checked>
@@ -279,7 +298,7 @@
 
                 <div class="row mt-5">
                     <div class="col-12">
-                        <p>Удар</p>
+                        <p class="mb-1">Удар</p>
 
                         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                             <input type="radio" class="btn-check" name="punchbtnradio" id="punch1" autocomplete="off"
@@ -339,10 +358,10 @@
 
                 <div class="row mt-5">
                     <div class="col-3">
-                        <p>Продолжительность удара (сек.)</p>
+                        <p class="mb-1">Продолжительность удара (сек.)</p>
                     </div>
                     <div class="col-3">
-                        <p>Тип ошибки</p>
+                        <p class="mb-1">Тип ошибки</p>
                     </div>
                     <div class="col-6"></div>
                 </div>

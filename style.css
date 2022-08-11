@@ -101,6 +101,10 @@
     box-shadow: none;
 }
 
+.score-input {
+    width: 42px;
+}
+
 /* Helpers */
 .border-dashed {
     border-style: dashed !important;
