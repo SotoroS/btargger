@@ -30,6 +30,12 @@
     --bs-btn-disabled-border-color: #329b47;
 }
 
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-border-color: #ced4da;
+    --bs-btn-bg: white;
+}
+
 * {
     font-family: Roboto, serif;
     font-size: 14px;
